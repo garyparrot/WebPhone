@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>WebPhone</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="all">
+        <script src="index.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <h1>WebPhone</h1>
+        <hr>
+        <div class="gameframe">
+            <div class="colorbox">
+                <img id="display" src="/api/phone/display" alt="" class="display">
+            </div>
+        </div>
+        <hr>
+        <div class="sectionbox">
+            <h2>General</h2>
+            <button>Connect adb</button>
+            <button>Refresh</button>
+        </div>
+        <div class="sectionbox">
+            <h2>Scripting</h2>
+            <label for="scriptname">
+                <span>Shell Script Path</span>
+                <input type="text" name="scriptname" id="" value="">
+                <button>Run</button>
+            </label>
+            <button>Kill</button>
+        </div>
+        <div class="sectionbox">
+            <h2>IO</h2>
+            <textarea class="io" name="stdout"></textarea>
+        </div>
+    </body>
+</html>
